@@ -1,6 +1,7 @@
 package pages.signup;
 
 import com.codeborne.selenide.SelenideElement;
+import org.openqa.selenium.By;
 import pages.account.BookingsPageObject;
 
 import static com.codeborne.selenide.Selenide.$;
@@ -9,31 +10,31 @@ import static com.codeborne.selenide.Selenide.page;
 public class SignUpPageObject {
 
     private SelenideElement getFirstNameField() {
-        return $("test");
+        return $(By.xpath("//input[@name = 'firstname']"));
     }
 
     private SelenideElement getLastNameField() {
-        return $("test");
+        return $(By.xpath("//input[@name = 'lastname']"));
     }
 
     private SelenideElement getMobileNumberField() {
-        return $("test");
+        return $(By.xpath("//input[@name = 'phone']"));
     }
 
     private SelenideElement getEmailField() {
-        return $("test");
+        return $(By.xpath("//input[@name = 'email']"));
     }
 
     private SelenideElement getPasswordField() {
-        return $("test");
+        return $(By.xpath("//input[@name = 'password']"));
     }
 
     private SelenideElement getConfirmPasswordField() {
-        return $("test");
+        return $(By.xpath("//input[@name = 'confirmpassword']"));
     }
 
     private SelenideElement getSignUpButton() {
-        return $("test");
+        return $("#login button");
     }
 
     public void enterFirstName(String name) {
