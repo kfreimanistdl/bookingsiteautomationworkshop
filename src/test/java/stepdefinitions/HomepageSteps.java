@@ -7,25 +7,31 @@ import pages.header.NavigationPageObject;
 
 public class HomepageSteps {
 
-    private NavigationPageObject homepage = new NavigationPageObject();
+    private NavigationPageObject navigation = new NavigationPageObject();
 
     @Given("^I have opened homepage$")
     public void iHaveOpenedHomepage() throws Throwable {
-        System.out.println("Navigation is visible");
+        System.out.println("OPEN HOMEPAGE");
     }
 
     @When("^I select My account menu$")
     public void iSelectMyAccountMenu() throws Throwable {
-        homepage.selectMyAccountButton();
+        navigation.selectMyAccountButton();
     }
 
-    @And("^I select Sign up button$")
+    @And("^I select Sign up button in Landing page$")
     public void iSelectSignUpButton() throws Throwable {
-        homepage.selectSignUpButton();
+        navigation.selectSignUpButton();
     }
 
-    @And("^I navigate to Signup page$")
-    public void iNavigateToSignUpPage() throws Throwable {
+    @And("^I select Login button in Landing page$")
+    public void iSelectLoginButton() throws Throwable {
+        navigation.selectLoginButton();
+    }
+
+    @And("^I am in Signup form$")
+    public void iAmInSignupForm() throws Throwable {
+        iHaveOpenedHomepage();
         iSelectMyAccountMenu();
         iSelectSignUpButton();
     }
