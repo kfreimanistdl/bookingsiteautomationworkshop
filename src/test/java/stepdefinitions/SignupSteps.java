@@ -1,42 +1,43 @@
 package stepdefinitions;
 
 import cucumber.api.java.en.And;
-import general.Account;
-import pages.signup.SignUpPageObject;
+import general.User;
+import pages.singup.SignUpPageObject;
 
 public class SignupSteps {
 
     private SignUpPageObject signUp = new SignUpPageObject();
-    private Account account = new Account();
+    private User user = new User();
+    private User userTwo = new User("Janis", "Berzins");
 
     @And("^I enter First name$")
     public void iEnterFirstName() throws Throwable {
-        signUp.enterFirstName(account.getFirstName());
+        signUp.enterFirstName(user.getFirstName());
     }
 
     @And("^I enter Last name$")
     public void iEnterLastName() throws Throwable {
-        signUp.enterLastName(account.getLastName());
+        signUp.enterLastName(user.getLastName());
     }
 
     @And("^I enter Mobile number$")
     public void iEnterMobileNumber() throws Throwable {
-        signUp.enterMobileNumber(account.getPhoneNumber());
+        signUp.enterMobileNumber(user.getMobileNumber());
     }
 
     @And("^I enter Email address$")
     public void iEnterEmailAddress() throws Throwable {
-        signUp.enterEmail(account.getEmail());
+        signUp.enterEmail(user.getEmailAddress());
     }
 
     @And("^I enter Password$")
     public void iEnterPassword() throws Throwable {
-        signUp.enterPassword(account.getPassword());
+        signUp.enterPassword(user.getPassword());
     }
 
     @And("^I confirm Password$")
     public void iConfirmPassword() throws Throwable {
-        signUp.enterConfirmPassword(account.getPassword());
+        signUp.enterConfirmationPassword(user.getPassword());
     }
 
     @And("^I select Sign up button in Signup page$")

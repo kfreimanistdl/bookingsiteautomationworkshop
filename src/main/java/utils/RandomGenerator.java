@@ -8,13 +8,14 @@ public class RandomGenerator {
         return RandomStringUtils.random(10, true, false);
     }
 
-    public static String generatePhoneNumber() {
-        return "+3712" + RandomStringUtils.random(7, false, true);
+    public static String generateRandomPhoneNumber() {
+        return "+371" + RandomStringUtils.random(8, false, true);
     }
 
-    public static String generateEmail() {
-        return RandomStringUtils.random(10, true, false) + "@" +
-                RandomStringUtils.random(10, true, false) + ".com";
+    public static String generateRandomEmail() {
+        return RandomStringUtils.random(7, true, false) + "." +
+                RandomStringUtils.random(7, true, false) + "@" +
+                RandomStringUtils.random(7, true, false) + ".com";
     }
 
 }

@@ -1,34 +1,33 @@
-package pages;
+package pages.header;
 
 import com.codeborne.selenide.SelenideElement;
-import org.openqa.selenium.By;
 import pages.landingpage.BookHotelsPageObject;
 import pages.login.LoginPageObject;
-import pages.signup.SignUpPageObject;
+import pages.singup.SignUpPageObject;
 
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.page;
 
 public class NavigationPageObject {
 
-    private SelenideElement getMyAccountMenu() {
-        return $(By.xpath("//nav/descendant::li[@id = 'li_myaccount']"));
+    private SelenideElement getMyAccountButton() {
+        return $("test");
     }
 
     private SelenideElement getSignUpButton() {
-        return $(By.xpath("//nav/descendant::li[@id = 'li_myaccount']/descendant::a[contains(text(), 'Sign')]"));
+        return $("test");
     }
 
     private SelenideElement getLoginButton() {
-        return $(By.xpath("//nav/descendant::li[@id = 'li_myaccount']/descendant::a[contains(text(), 'Login')]"));
+        return $("test");
     }
 
     private SelenideElement getLogoutButton() {
         return $("test");
     }
 
-    public void selectMyAccountMenu() {
-        getMyAccountMenu().click();
+    public void selectMyAccountButton() {
+        getMyAccountButton().click();
     }
 
     public SignUpPageObject selectSignUpButton() {

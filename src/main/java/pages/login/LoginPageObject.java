@@ -1,7 +1,7 @@
 package pages.login;
 
 import com.codeborne.selenide.SelenideElement;
-import pages.account.BookingsPageObject;
+import pages.account.AccountPageObject;
 
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.page;
@@ -28,9 +28,9 @@ public class LoginPageObject {
         getPasswordField().sendKeys(password);
     }
 
-    public BookingsPageObject selectLoginButton() {
+    public AccountPageObject selectLoginButton() {
         getLoginButton().click();
-        return page(BookingsPageObject.class);
+        return page(AccountPageObject.class);
     }
 
 }

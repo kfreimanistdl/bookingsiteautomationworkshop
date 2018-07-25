@@ -3,12 +3,11 @@ package stepdefinitions;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
-import pages.NavigationPageObject;
+import pages.header.NavigationPageObject;
 
-public class LandingPageSteps {
+public class HomepageSteps {
 
     private NavigationPageObject navigation = new NavigationPageObject();
-
 
     @Given("^I have opened homepage$")
     public void iHaveOpenedHomepage() throws Throwable {
@@ -17,7 +16,7 @@ public class LandingPageSteps {
 
     @When("^I select My account menu$")
     public void iSelectMyAccountMenu() throws Throwable {
-        navigation.selectMyAccountMenu();
+        navigation.selectMyAccountButton();
     }
 
     @And("^I select Sign up button in Landing page$")
@@ -36,4 +35,5 @@ public class LandingPageSteps {
         iSelectMyAccountMenu();
         iSelectSignUpButton();
     }
+
 }

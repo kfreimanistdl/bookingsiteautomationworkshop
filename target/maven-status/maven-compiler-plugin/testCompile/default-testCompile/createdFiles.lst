@@ -1,6 +1,6 @@
 stepdefinitions/Hooks.class
 testrunner/TestRunner.class
-stepdefinitions/LandingPageSteps.class
+stepdefinitions/AccountSteps.class
+stepdefinitions/HomepageSteps.class
 stepdefinitions/LoginSteps.class
 stepdefinitions/SignupSteps.class
-stepdefinitions/BookingsPageSteps.class
