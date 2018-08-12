@@ -1,6 +1,7 @@
 package pages.login;
 
 import com.codeborne.selenide.SelenideElement;
+import org.openqa.selenium.By;
 import pages.account.AccountPageObject;
 
 import static com.codeborne.selenide.Selenide.$;
@@ -9,15 +10,15 @@ import static com.codeborne.selenide.Selenide.page;
 public class LoginPageObject {
 
     private SelenideElement getEmailField() {
-        return $("test");
+        return $("input[name = 'username']");
     }
 
     private SelenideElement getPasswordField() {
-        return $("test");
+        return $("input[name = 'password']");
     }
 
     private SelenideElement getLoginButton() {
-        return $("test");
+        return $(By.xpath("//button[contains(text(), 'Login')]"));
     }
 
     public void enterEmail(String email) {

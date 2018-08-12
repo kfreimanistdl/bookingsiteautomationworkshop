@@ -1,52 +1,53 @@
 package stepdefinitions;
 
 import cucumber.api.java.en.And;
-import general.User;
-import pages.singup.SignUpPageObject;
+import general.TestContext;
 
 public class SignupSteps {
 
-    private SignUpPageObject signUp = new SignUpPageObject();
-    private User user = new User();
-    private User userTwo = new User("Janis", "Berzins");
+    private TestContext test;
+
+    public SignupSteps(TestContext testContext) {
+        this.test = testContext;
+    }
 
     @And("^I enter First name$")
-    public void iEnterFirstName() throws Throwable {
-        signUp.enterFirstName(user.getFirstName());
+    public void iEnterFirstName() {
+        test.getSignUpPage().enterFirstName(test.getUser().getFirstName());
     }
 
     @And("^I enter Last name$")
-    public void iEnterLastName() throws Throwable {
-        signUp.enterLastName(user.getLastName());
+    public void iEnterLastName() {
+        test.getSignUpPage().enterLastName(test.getUser().getLastName());
     }
 
     @And("^I enter Mobile number$")
-    public void iEnterMobileNumber() throws Throwable {
-        signUp.enterMobileNumber(user.getMobileNumber());
+    public void iEnterMobileNumber() {
+        test.getSignUpPage().enterMobileNumber(test.getUser().getMobileNumber());
     }
 
     @And("^I enter Email address$")
-    public void iEnterEmailAddress() throws Throwable {
-        signUp.enterEmail(user.getEmailAddress());
+    public void iEnterEmailAddress() {
+        test.getSignUpPage().enterEmail(test.getUser().getEmailAddress());
     }
 
     @And("^I enter Password$")
-    public void iEnterPassword() throws Throwable {
-        signUp.enterPassword(user.getPassword());
+    public void iEnterPassword() {
+        test.getSignUpPage().enterPassword(test.getUser().getPassword());
     }
 
     @And("^I confirm Password$")
-    public void iConfirmPassword() throws Throwable {
-        signUp.enterConfirmationPassword(user.getPassword());
+    public void iConfirmPassword() {
+        test.getSignUpPage().enterConfirmationPassword(test.getUser().getPassword());
     }
 
-    @And("^I select Sign up button in Signup page$")
-    public void iSelectSignUpButtonInSignUpPage() throws Throwable {
-        signUp.selectSignUpButton();
+    @And("^I select Sign Up button$")
+    public void iSelectSignUpButtonInSignUpPage() {
+        test.getSignUpPage().selectSignUpButton();
     }
 
     @And("I have created new account")
-    public void newAccountCreated() throws Throwable {
+    public void newAccountCreated() {
         iEnterFirstName();
         iEnterLastName();
         iEnterMobileNumber();

@@ -1,27 +1,29 @@
 package stepdefinitions;
 
 import cucumber.api.java.en.And;
-import general.User;
-import pages.login.LoginPageObject;
+import general.TestContext;
 
 public class LoginSteps {
 
-    private User user = new User();
-    private LoginPageObject login = new LoginPageObject();
+    private TestContext test;
+
+    public LoginSteps(TestContext testContext) {
+        this.test = testContext;
+    }
 
     @And("^I enter existing Email address$")
-    public void iEnterExistingEmailAddress() throws Throwable {
-        login.enterEmail(user.getEmailAddress());
+    public void iEnterExistingEmailAddress() {
+        test.getLoginPage().enterEmail(test.getUser().getEmailAddress());
     }
 
     @And("^I enter existing Password$")
-    public void iEnterExistingPassword() throws Throwable {
-        login.enterPassword(user.getPassword());
+    public void iEnterExistingPassword() {
+        test.getLoginPage().enterPassword(test.getUser().getPassword());
     }
 
-    @And("^I select Login button in Login form$")
-    public void iSelectLoginButton() throws Throwable {
-        login.selectLoginButton();
+    @And("^I select Login button$")
+    public void iSelectLoginButton() {
+        test.getLoginPage().selectLoginButton();
     }
 
 }

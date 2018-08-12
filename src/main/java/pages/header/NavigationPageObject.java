@@ -1,7 +1,8 @@
 package pages.header;
 
 import com.codeborne.selenide.SelenideElement;
-import pages.landingpage.BookHotelsPageObject;
+import org.openqa.selenium.By;
+import pages.landingpage.LandingPageObejct;
 import pages.login.LoginPageObject;
 import pages.singup.SignUpPageObject;
 
@@ -11,23 +12,35 @@ import static com.codeborne.selenide.Selenide.page;
 public class NavigationPageObject {
 
     private SelenideElement getMyAccountButton() {
-        return $("test");
+        return $(By.xpath("//nav/descendant::li[@id = 'li_myaccount' ]"));
+    }
+
+    private SelenideElement getUserAccountButton(String username) {
+        return $(By.xpath("//nav/descendant::a[contains(text(), '" + username + "')]"));
     }
 
     private SelenideElement getSignUpButton() {
-        return $("test");
+        return $(By.xpath("//nav/descendant::a[ contains(text(), 'Sign Up') ]"));
     }
 
     private SelenideElement getLoginButton() {
-        return $("test");
+        return $(By.xpath("//nav/descendant::a[ contains(text(), 'Login') ]"));
     }
 
     private SelenideElement getLogoutButton() {
-        return $("test");
+        return $(By.xpath("//nav/descendant::a[ contains(text(), 'Logout') ]"));
+    }
+
+    private SelenideElement getHomeButton() {
+        return $(By.xpath("//nav/descendant::a[contains(text(), 'Home')]"));
     }
 
     public void selectMyAccountButton() {
         getMyAccountButton().click();
+    }
+
+    public void selectUserAccountButton(String username) {
+        getUserAccountButton(username).click();
     }
 
     public SignUpPageObject selectSignUpButton() {
@@ -40,9 +53,15 @@ public class NavigationPageObject {
         return page(LoginPageObject.class);
     }
 
-    public BookHotelsPageObject selectLogoutButton() {
+    public LandingPageObejct selectLogoutButton() {
         getLogoutButton().click();
-        return page(BookHotelsPageObject.class);
+        return page(LandingPageObejct.class);
+    }
+
+    public LandingPageObejct selectHomeButton() throws InterruptedException {
+        Thread.sleep(1000);
+        getHomeButton().click();
+        return page(LandingPageObejct.class);
     }
 
 }
