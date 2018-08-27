@@ -1,10 +1,13 @@
 package pages.singup;
 
+import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
 import pages.account.AccountPageObject;
 
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.$$;
 import static com.codeborne.selenide.Selenide.page;
 
 public class SignUpPageObject {
@@ -37,6 +40,18 @@ public class SignUpPageObject {
         return $(By.xpath("//button[contains(text(), 'Sign Up')]"));
     }
 
+    private SelenideElement getFormTitle() {
+        return $(".panel-heading");
+    }
+
+    private SelenideElement getErrorField() {
+        return $(".alert-danger");
+    }
+
+    private ElementsCollection getErrorList() {
+        return $$(".alert-danger p");
+    }
+
     public void enterFirstName(String firstname) {
         getFirstNameField().sendKeys(firstname);
     }
@@ -64,6 +79,26 @@ public class SignUpPageObject {
     public AccountPageObject selectSignUpButton() {
         getSignUpButton().click();
         return page(AccountPageObject.class);
+    }
+
+    public String getFormTitleText() {
+        return getFormTitle().getText();
+    }
+
+    public boolean isSignUpButtonVisible() {
+        return getSignUpButton().isDisplayed();
+    }
+
+    public ElementsCollection getAllErrorMessages() {
+        return getErrorList();
+    }
+
+    public int getErrorMessageCount() {
+        return getErrorList().size();
+    }
+
+    public void waitUntilErrorMessagesAreDisplayed() {
+        getErrorField().waitUntil(Condition.visible, 5000);
     }
 
 }
