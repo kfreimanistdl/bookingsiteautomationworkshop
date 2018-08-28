@@ -1,0 +1,61 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "Kristapss-MacBook-Pro-2.local",
+    "children" : [ {
+      "name" : "3707@Kristapss-MacBook-Pro-2.local.main(1)",
+      "children" : [ {
+        "name" : "Successful sign-up",
+        "uid" : "84ea2c1775dbe78b",
+        "parentUid" : "7c5ec9074ea86043d9d3c88f78172b57",
+        "status" : "passed",
+        "time" : {
+          "start" : 1535466980809,
+          "stop" : 1535466989908,
+          "duration" : 9099
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Book existing hotel successfully",
+        "uid" : "b56f6a0f3de38428",
+        "parentUid" : "7c5ec9074ea86043d9d3c88f78172b57",
+        "status" : "failed",
+        "time" : {
+          "start" : 1535466943727,
+          "stop" : 1535466967140,
+          "duration" : 23413
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Unsuccessful sign-up",
+        "uid" : "a66586c5e8db1fae",
+        "parentUid" : "7c5ec9074ea86043d9d3c88f78172b57",
+        "status" : "passed",
+        "time" : {
+          "start" : 1535466989915,
+          "stop" : 1535466997714,
+          "duration" : 7799
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Successful login",
+        "uid" : "f35cf34eecf383d7",
+        "parentUid" : "7c5ec9074ea86043d9d3c88f78172b57",
+        "status" : "passed",
+        "time" : {
+          "start" : 1535466967311,
+          "stop" : 1535466980801,
+          "duration" : 13490
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7c5ec9074ea86043d9d3c88f78172b57"
+    } ],
+    "uid" : "f6b189dce94cfeb27e8d27283f7a6d3b"
+  } ]
+}

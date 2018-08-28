@@ -1,0 +1,211 @@
+{
+  "uid" : "a66586c5e8db1fae",
+  "name" : "Unsuccessful sign-up",
+  "historyId" : "2414beea05cf324ac77c41bfcb4cc70c",
+  "time" : {
+    "start" : 1535466989915,
+    "stop" : 1535466997714,
+    "duration" : 7799
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "before",
+      "time" : {
+        "start" : 1535466989915,
+        "stop" : 1535466989915,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "before",
+      "time" : {
+        "start" : 1535466989915,
+        "stop" : 1535466994007,
+        "duration" : 4092
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Given  Landing page is opened",
+      "time" : {
+        "start" : 1535466994007,
+        "stop" : 1535466995043,
+        "duration" : 1036
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "When  I select My Account button in Navigation bar",
+      "time" : {
+        "start" : 1535466995044,
+        "stop" : 1535466995243,
+        "duration" : 199
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And  I select Sign Up button in Navigation bar",
+      "time" : {
+        "start" : 1535466995244,
+        "stop" : 1535466995885,
+        "duration" : 641
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And  Sign Up page is opened",
+      "time" : {
+        "start" : 1535466995885,
+        "stop" : 1535466996932,
+        "duration" : 1047
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And  I select Sign Up button",
+      "time" : {
+        "start" : 1535466996932,
+        "stop" : 1535466996989,
+        "duration" : 57
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Then  error messages are displayed",
+      "time" : {
+        "start" : 1535466996989,
+        "stop" : 1535466997581,
+        "duration" : 592
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And  Sign Up page is opened",
+      "time" : {
+        "start" : 1535466997581,
+        "stop" : 1535466997625,
+        "duration" : 44
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "after",
+      "time" : {
+        "start" : 1535466997625,
+        "stop" : 1535466997714,
+        "duration" : 89
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 10,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "This feature is about creating new account in the system"
+  }, {
+    "name" : "story",
+    "value" : "Unsuccessful sign-up"
+  }, {
+    "name" : "host",
+    "value" : "Kristapss-MacBook-Pro-2.local"
+  }, {
+    "name" : "package",
+    "value" : "This feature is about creating new account in the system"
+  }, {
+    "name" : "suite",
+    "value" : "This feature is about creating new account in the system"
+  }, {
+    "name" : "testClass",
+    "value" : "Unsuccessful sign-up"
+  }, {
+    "name" : "thread",
+    "value" : "3707@Kristapss-MacBook-Pro-2.local.main(1)"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a66586c5e8db1fae.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,37 @@
+{
+  "total" : 3,
+  "items" : [ {
+    "uid" : "9fb7c61350d1d77527d89045caa062ed",
+    "name" : "This feature is about testing booking of hotels functionality",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "dbba6dcf28f847c8e60a6c3948755c8f",
+    "name" : "This feature is about creating new account in the system",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "ca1e09639437ab3c088d8c9403b07007",
+    "name" : "This feature is about login in to existing account, to make sure it can be accessed and has all the correct data",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  } ]
+}

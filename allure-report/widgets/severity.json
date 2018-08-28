@@ -1,0 +1,41 @@
+[ {
+  "uid" : "f35cf34eecf383d7",
+  "name" : "Successful login",
+  "time" : {
+    "start" : 1535466967311,
+    "stop" : 1535466980801,
+    "duration" : 13490
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b56f6a0f3de38428",
+  "name" : "Book existing hotel successfully",
+  "time" : {
+    "start" : 1535466943727,
+    "stop" : 1535466967140,
+    "duration" : 23413
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "84ea2c1775dbe78b",
+  "name" : "Successful sign-up",
+  "time" : {
+    "start" : 1535466980809,
+    "stop" : 1535466989908,
+    "duration" : 9099
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a66586c5e8db1fae",
+  "name" : "Unsuccessful sign-up",
+  "time" : {
+    "start" : 1535466989915,
+    "stop" : 1535466997714,
+    "duration" : 7799
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
