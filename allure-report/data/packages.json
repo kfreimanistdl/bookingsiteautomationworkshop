@@ -1,0 +1,65 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "This feature is about testing booking of hotels functionality",
+    "children" : [ {
+      "name" : "Book existing hotel successfully",
+      "uid" : "b56f6a0f3de38428",
+      "parentUid" : "ab79e6c1c0e456e4d89f57ac6efcbc11",
+      "status" : "failed",
+      "time" : {
+        "start" : 1535466943727,
+        "stop" : 1535466967140,
+        "duration" : 23413
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "ab79e6c1c0e456e4d89f57ac6efcbc11"
+  }, {
+    "name" : "This feature is about login in to existing account, to make sure it can be accessed and has all the correct data",
+    "children" : [ {
+      "name" : "Successful login",
+      "uid" : "f35cf34eecf383d7",
+      "parentUid" : "1d886118d6c8b29a8d11b5e722ad454e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535466967311,
+        "stop" : 1535466980801,
+        "duration" : 13490
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "1d886118d6c8b29a8d11b5e722ad454e"
+  }, {
+    "name" : "This feature is about creating new account in the system",
+    "children" : [ {
+      "name" : "Successful sign-up",
+      "uid" : "84ea2c1775dbe78b",
+      "parentUid" : "680bbd8f29fb398bb91cc2d3e2e1b0f5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535466980809,
+        "stop" : 1535466989908,
+        "duration" : 9099
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Unsuccessful sign-up",
+      "uid" : "a66586c5e8db1fae",
+      "parentUid" : "680bbd8f29fb398bb91cc2d3e2e1b0f5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535466989915,
+        "stop" : 1535466997714,
+        "duration" : 7799
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "680bbd8f29fb398bb91cc2d3e2e1b0f5"
+  } ]
+}

@@ -1,0 +1,25 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "expected:<[tru]e> but was:<[fals]e>",
+      "children" : [ {
+        "name" : "Book existing hotel successfully",
+        "uid" : "b56f6a0f3de38428",
+        "parentUid" : "e616d06892d06894197698c40751ed95",
+        "status" : "failed",
+        "time" : {
+          "start" : 1535466943727,
+          "stop" : 1535466967140,
+          "duration" : 23413
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e616d06892d06894197698c40751ed95"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

@@ -5,5 +5,7 @@
 /Users/kristapsfreimanis/Documents/Automation/bookingsiteautomationworkshop/src/test/java/stepdefinitions/BookingDetailsSteps.java
 /Users/kristapsfreimanis/Documents/Automation/bookingsiteautomationworkshop/src/test/java/stepdefinitions/NavigationSteps.java
 /Users/kristapsfreimanis/Documents/Automation/bookingsiteautomationworkshop/src/test/java/stepdefinitions/AccountSteps.java
+/Users/kristapsfreimanis/Documents/Automation/bookingsiteautomationworkshop/src/test/java/stepdefinitions/InvoiceSteps.java
 /Users/kristapsfreimanis/Documents/Automation/bookingsiteautomationworkshop/src/test/java/stepdefinitions/Hooks.java
 /Users/kristapsfreimanis/Documents/Automation/bookingsiteautomationworkshop/src/test/java/stepdefinitions/SignupSteps.java
+/Users/kristapsfreimanis/Documents/Automation/bookingsiteautomationworkshop/src/test/java/stepdefinitions/ConfirmHotelBookingSteps.java
